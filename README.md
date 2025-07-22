@@ -94,4 +94,3 @@ npm -v
 
 Proyecto desarrollado como entrega final para la materia **Programación Web 1**  
 Facultad de Ciencias y Tecnología – UNCA
-EOF
