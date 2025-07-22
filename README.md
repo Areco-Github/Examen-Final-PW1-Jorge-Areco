@@ -1,7 +1,7 @@
 # Gestión de Categorías y Productos - Guía de inicio
 
 ## Descripción
-Esta aplicación permite gestionar categorías y productos con funcionalidades completas de creación, edición, eliminación y listado, ademas incluye un resumen del preomedio de los precios por categoria.
+Esta aplicación permite gestionar categorías y productos con funcionalidades completas de creación, edición, eliminación y listado. Ademas incluye un resumen del promedio de los precios por categoria.
 
 ---
 ## Instalacion: 
