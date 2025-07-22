@@ -1,4 +1,4 @@
-# San Juan Store - Guía de inicio
+# Guía de inicio
 
 ## Backend
 
