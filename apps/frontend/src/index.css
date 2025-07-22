@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+/* Ajuste global del tamaño de fuente */
+html {
+  font-size: 18px; /* el valor predeterminado es 16px */
+}

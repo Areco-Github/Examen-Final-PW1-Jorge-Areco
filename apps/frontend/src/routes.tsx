@@ -4,6 +4,8 @@ import NotFound from "./pages/NotFound";
 import Jonas from "./pages/Jonas";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Dashboard from "./pages/Dashboard";
+import Areco from "./pages/Areco";
+import GestionProductosCategorias from "./pages/GestionProductosCategorias";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
       {
         path: "/jonas",
         element: <Jonas />,
+      },
+      {
+        path: "/areco",
+        element: <Areco />,
+      },
+      {
+        path: "/final",
+        element: <GestionProductosCategorias />,
       },
     ],
   },

@@ -1,28 +1,27 @@
-// ProtectedRoute.tsx
 import { useEffect, useState } from "react";
 import { Outlet, Navigate } from "react-router-dom";
-import api from "../libs/api"; // tu instancia de Axios configurada
+import api from "../libs/api";
 
 const ProtectedRoute = () => {
-    const [auth, setAuth] = useState<null | boolean>(null);
+  const [auth, setAuth] = useState<boolean | null>(null);
 
-    useEffect(() => {
-        const checkAuth = async () => {
-            try {
-                await api.get("/me", { withCredentials: true });
-                setAuth(true);
-            } catch (e) {
-                console.error(e);
-                setAuth(false);
-            }
-        };
+  useEffect(() => {
+    const checkAuth = async () => {
+      try {
+        await api.get("/auth/me"); // endpoint actualizado
+        setAuth(true);
+      } catch (e) {
+        console.error(e);
+        setAuth(false);
+      }
+    };
 
-        checkAuth();
-    }, []);
+    checkAuth();
+  }, []);
 
-    if (auth === null) return <div>Cargando...</div>;
+  if (auth === null) return <div>Cargando...</div>;
 
-    return auth ? <Outlet /> : <Navigate to="/" replace />;
+  return auth ? <Outlet /> : <Navigate to="/" replace />;
 };
 
 export default ProtectedRoute;
